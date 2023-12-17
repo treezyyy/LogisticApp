@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar_men">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/resistregular"
+            android:textColor="@color/black"
+            android:text="Привет, Алексей"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:layout_marginStart="11dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification"
+            android:layout_marginStart="11dp">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/restangel_main"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ID:8264"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:layout_marginStart="19dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="$: "
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:layout_marginStart="157dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="0"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="$: "
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="0"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp">
+
+        <ImageButton
+
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:background="@drawable/button_first">
+
+        </ImageButton>
+
+        <ImageButton
+
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:background="@drawable/button_second"
+            android:layout_marginStart="40dp">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp">
+
+        <ImageButton
+
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:background="@drawable/button_third">
+
+        </ImageButton>
+
+        <ImageButton
+
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:background="@drawable/button_last"
+            android:layout_marginStart="40dp">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

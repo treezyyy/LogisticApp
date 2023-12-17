@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="97dp"
+        android:text="Вы уже решили, что заказывать?"
+        android:textSize="32sp"
+        android:fontFamily="@font/resistmediun"
+        android:textColor="@color/black"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="189dp"
+        android:gravity="center">
+    </TextView>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="43dp"
+                android:layout_height="26dp"
+                android:textSize="18sp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:fontFamily="@font/resistthin">
+            </TextView>
+
+            <EditText
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="#EEEEEE"
+                >
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:animationCache="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="26dp"
+                android:fontFamily="@font/resistthin"
+                android:text="Пароль"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <EditText
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="#EEEEEE">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <CheckBox
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#EEEEEE"
+                android:buttonTint="#EEEEEE">
+            </CheckBox>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/resistthin"
+                android:text="Запомнить меня"
+                android:layout_marginLeft="4dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/resistthin"
+                android:text="Не помню пароль"
+                android:layout_marginLeft="83dp">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#E73F46"
+        android:fontFamily="@font/resistthin"
+        android:text="Войти"
+        android:gravity="center"
+        android:layout_marginTop="104dp"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нет аккаунта?"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/resistthin"
+            android:layout_marginStart="109dp">
+
+        </TextView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/resistthin"
+            android:text="Создать"
+            android:textColor="#E63F46"
+            android:textSize="14sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

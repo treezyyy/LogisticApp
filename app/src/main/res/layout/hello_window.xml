@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        android:src="@drawable/ic_hi"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="153dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="27dp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:fontFamily="@font/resistmediun"
+        android:text="Рады вас видеть!"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="27dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="@font/resistmediun"
+        android:text="Готовы поработать?"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/resistthin"
+        android:text="Create account or Log In"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="76dp"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="66.67dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#E73F46"
+                android:fontFamily="@font/resistthin"
+                android:text="Создать"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#E73F46"
+                android:fontFamily="@font/resistthin"
+                android:text="Войти"
+                android:layout_marginStart="24dp"
+                android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
