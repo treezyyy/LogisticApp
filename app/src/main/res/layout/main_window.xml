@@ -171,6 +171,262 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="21dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_telegram"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Наши-телеграмм-каналы"
+                android:fontFamily="@font/resistmediun"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_demonstration"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Новости LogisticApp"
+                android:fontFamily="@font/resistthin"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="114dp">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chat"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Чат клиентов"
+                android:fontFamily="@font/resistthin"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="162dp">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hand"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Служба поддержки"
+                android:fontFamily="@font/resistthin"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="118dp">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_yand"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Обмен юаней"
+                android:fontFamily="@font/resistthin"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="163dp">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            >
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_letter"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Отзывы"
+                android:fontFamily="@font/resistthin"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp">
+
+            </TextView>
+
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="204dp">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="101dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Нужна помощь?"
+            android:fontFamily="@font/resistthin">
+
+        </TextView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#E73F46"
+            android:text="Инструкция"
+            android:fontFamily="@font/resistthin"
+            android:autoLink="web"
+            android:linksClickable="true">
+
+        </TextView>
+
+    </LinearLayout>
 
 </LinearLayout>
