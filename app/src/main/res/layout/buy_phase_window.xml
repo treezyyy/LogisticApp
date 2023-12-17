@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar_men">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/resistregular"
+            android:textColor="@color/black"
+            android:text="Привет, Алексей"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:layout_marginStart="11dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification"
+            android:layout_marginStart="11dp">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/restangel_main"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ID:8264"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:layout_marginStart="19dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="$: "
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:layout_marginStart="157dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="0"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="$: "
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="0"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_vertical">
+
+        <ImageButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_home">
+
+        </ImageButton>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_palok"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/resistlight"
+            android:text="Заказы">
+
+        </TextView>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_palok"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/resistlight"
+            android:text="Новые">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:text="Новые"
+        android:textColor="@color/black"
+        android:fontFamily="@font/resistmediun"
+        android:textSize="32sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_restangel"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:text="+ Новый заказ"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp">
+
+        <CheckBox
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/check_box"
+            android:buttonTint="#FFFFFF"
+            >
+
+        </CheckBox>
+        
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выбрать все"
+            android:textColor="@color/black"
+            android:fontFamily="@font/resistmediun"
+            android:textSize="16sp"
+            android:layout_marginStart="12dp">
+
+        </TextView>
+
+        <ImageButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_delete"
+            android:layout_marginStart="88dp">
+
+        </ImageButton>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            android:textColor="#FC0005"
+            android:fontFamily="@font/resistmediun"
+            android:textSize="16sp"
+            android:layout_marginStart="2dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Здесь пока нет записей"
+        android:textSize="14sp"
+        android:fontFamily="@font/resistlight"
+        android:textColor="#B8B8B8"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="21dp"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="349dp"
+        android:layout_marginStart="101dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Нужна помощь?"
+            android:fontFamily="@font/resistthin">
+
+        </TextView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#E73F46"
+            android:text="Инструкция"
+            android:fontFamily="@font/resistthin"
+            android:autoLink="web"
+            android:linksClickable="true">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
