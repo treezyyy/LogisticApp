@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@color/white">
 
     <TextView
 
@@ -53,10 +54,14 @@
             </TextView>
 
             <EditText
+                android:id="@+id/name_field"
                 android:layout_width="328dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="6dp"
                 android:background="#EEEEEE"
+                android:textColor="#B8B8B8"
+                android:textSize="16sp"
+                android:fontFamily="@font/resistthin"
                 >
 
             </EditText>
@@ -85,10 +90,14 @@
                 </TextView>
 
                 <EditText
+                    android:id="@+id/email_field"
                     android:layout_width="328dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="6dp"
                     android:background="#EEEEEE"
+                    android:textColor="#B8B8B8"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/resistthin"
                     >
 
                 </EditText>
@@ -114,10 +123,14 @@
                 </TextView>
 
                 <EditText
+                    android:id="@+id/password_field"
                     android:layout_width="328dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="6dp"
-                    android:background="#EEEEEE">
+                    android:background="#EEEEEE"
+                    android:textColor="#B8B8B8"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/resistthin">
 
                 </EditText>
 
@@ -196,6 +209,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/button_registration"
         android:layout_width="328dp"
         android:layout_height="50dp"
         android:backgroundTint="#E73F46"
