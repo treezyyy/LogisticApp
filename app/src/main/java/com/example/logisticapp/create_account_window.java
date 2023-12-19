@@ -9,11 +9,18 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+
 public class create_account_window extends AppCompatActivity {
+
     private ExecutorService executorService = Executors.newSingleThreadExecutor();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +31,11 @@ public class create_account_window extends AppCompatActivity {
         registration_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                EditText name = (EditText) findViewById( R.id.name_field);
+                EditText email = (EditText) findViewById( R.id.email_field);
+                EditText password = (EditText) findViewById( R.id.password_field);
                 ProgressTask progressTask = new ProgressTask();
+                progressTask.user = new User(name, email, password);
                 executorService.submit(progressTask);
             }
         });
@@ -32,11 +43,13 @@ public class create_account_window extends AppCompatActivity {
     }
 
     class ProgressTask implements Runnable {
+        User user;
         String connectionError = null;
         @Override
         public void run() {
             try {
-                signUpNewUser();
+                client.Connect();
+                client.RegisterUser(user);
             } catch (Exception ex) {
                 connectionError = ex.getMessage();
             }
@@ -46,14 +59,5 @@ public class create_account_window extends AppCompatActivity {
 
 
 
-    private void signUpNewUser() throws SQLException, ClassNotFoundException {
 
-        DataBaseHandler dbHandler = new DataBaseHandler();
-
-        EditText name = (EditText) findViewById( R.id.name_field);
-        EditText email = (EditText) findViewById( R.id.email_field);
-        EditText password = (EditText) findViewById( R.id.password_field);
-        User user = new User(name, email, password);
-        dbHandler.signUpUser(user);
-    }
 }

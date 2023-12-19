@@ -40,6 +40,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/email_sign"
                 android:layout_width="328dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="6dp"
@@ -67,9 +68,12 @@
                 android:fontFamily="@font/resistthin"
                 android:text="Пароль"
                 android:textColor="@color/black"
-                android:textSize="18sp"></TextView>
+                android:textSize="18sp">
+
+            </TextView>
 
             <EditText
+                android:id="@+id/password_sign"
                 android:layout_width="328dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="6dp"
