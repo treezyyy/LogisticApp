@@ -126,6 +126,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/signs_button"
         android:layout_width="328dp"
         android:layout_height="50dp"
         android:backgroundTint="#E73F46"

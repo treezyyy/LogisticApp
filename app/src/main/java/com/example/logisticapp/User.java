@@ -16,6 +16,11 @@ public class User {
         this.password = String.valueOf(password.getText());
     }
 
+    public User(EditText email, EditText password) {
+        this.email = String.valueOf(email.getText());
+        this.password = String.valueOf(password.getText());
+    }
+
     public int getId() {
         return id;
     }

@@ -22,6 +22,7 @@
         </activity>
         <activity android:label="create_account_window" android:name=".create_account_window"/>
         <activity android:label="sign_window" android:name=".SignWindow"/>
+        <activity android:label="sign_window" android:name=".MainWindow"/>
     </application>
 
 </manifest>
