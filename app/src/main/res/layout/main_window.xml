@@ -161,7 +161,7 @@
         </ImageButton>
 
         <ImageButton
-
+            android:id="@+id/finans_button"
             android:layout_width="144dp"
             android:layout_height="144dp"
             android:background="@drawable/button_last"
