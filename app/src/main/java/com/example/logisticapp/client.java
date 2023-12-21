@@ -48,11 +48,11 @@ public class client {
         JSONObject mamavano = new JSONObject();
         mamavano.put("coins", coins);
         out.write("coins " + mamavano + "\n");
-        String backresult = in.readLine();
-        JSONTokener js = new JSONTokener(backresult);
+        String urlToClint = in.readLine();
+        JSONTokener js = new JSONTokener(urlToClint);
         JSONObject root = new JSONObject(js);
         out.flush();
-        return backresult;
+        return root.getString("url");
     }
 
 
