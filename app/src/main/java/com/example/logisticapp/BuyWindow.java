@@ -23,7 +23,7 @@ public class BuyWindow extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    client.PayMenent(String.valueOf(Money));
+                    String url = client.PayMenent(String.valueOf(Money));
                 } catch (IOException | JSONException e) {
                     throw new RuntimeException(e);
                 }
