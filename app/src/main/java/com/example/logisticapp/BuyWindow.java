@@ -1,6 +1,9 @@
 package com.example.logisticapp;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -24,6 +27,8 @@ public class BuyWindow extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     String url = client.PayMenent(String.valueOf(Money));
+                    Intent openPage = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    startActivity(openPage);
                 } catch (IOException | JSONException e) {
                     throw new RuntimeException(e);
                 }
