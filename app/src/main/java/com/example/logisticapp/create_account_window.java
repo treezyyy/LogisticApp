@@ -10,6 +10,8 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -35,7 +37,13 @@ public class create_account_window extends AppCompatActivity {
                 EditText email = (EditText) findViewById( R.id.email_field);
                 EditText password = (EditText) findViewById( R.id.password_field);
                 ProgressTask progressTask = new ProgressTask();
-                progressTask.user = new User(name, email, password);
+                try {
+                    progressTask.user = new User(name, email, password);
+                } catch (NoSuchAlgorithmException e) {
+                    throw new RuntimeException(e);
+                } catch (InvalidKeySpecException e) {
+                    throw new RuntimeException(e);
+                }
                 executorService.submit(progressTask);
             }
         });

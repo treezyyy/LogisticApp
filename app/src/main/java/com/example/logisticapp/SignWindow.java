@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -24,7 +27,13 @@ public class SignWindow extends AppCompatActivity {
                 EditText emails = (EditText) findViewById( R.id.email_sign);
                 EditText passwords = (EditText) findViewById( R.id.password_sign);
                 ProgressTasks progressTasks = new ProgressTasks();
-                progressTasks.user = new User(emails, passwords);
+                try {
+                    progressTasks.user = new User(emails, passwords);
+                } catch (NoSuchAlgorithmException e) {
+                    throw new RuntimeException(e);
+                } catch (InvalidKeySpecException e) {
+                    throw new RuntimeException(e);
+                }
                 progressTasks.view = view;
                 executorService.submit(progressTasks);
             }

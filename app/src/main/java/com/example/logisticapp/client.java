@@ -24,6 +24,7 @@ public class client {
         mamavano.put("name", user.getName());
         mamavano.put("email", user.getEmail());
         mamavano.put("password", user.getPassword());
+        mamavano.put("", 0);
         out.write("register " + mamavano + "\n");
         out.flush();
     }
