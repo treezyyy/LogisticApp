@@ -44,5 +44,17 @@ public class client {
         return root.getBoolean("bool");
     }
 
+    public static String PayMenent(String coins) throws IOException, JSONException {
+        out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+        JSONObject mamavano = new JSONObject();
+        mamavano.put("coins", coins);
+        out.write("coins " + mamavano + "\n");
+        out.flush();
+        String urlToClint = in.readLine();
+        JSONTokener js = new JSONTokener(urlToClint);
+        JSONObject root = new JSONObject(js);
+        return root.getString("url");
+    }
+
 
 }
