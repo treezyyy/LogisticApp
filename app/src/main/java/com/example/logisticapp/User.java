@@ -12,6 +12,8 @@ import java.util.Arrays;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
+
+
 public class User {
 
     private int id;
@@ -23,9 +25,10 @@ public class User {
         this.name = String.valueOf(name.getText());
         this.email = String.valueOf(email.getText());
         String passwordik = String.valueOf(password.getText());
-        SecureRandom random = new SecureRandom();
+        //SecureRandom random = new SecureRandom();
+        //byte[] salt = new byte[16];
+       // random.nextBytes(salt);
         byte[] salt = new byte[16];
-        random.nextBytes(salt);
         KeySpec spec = new PBEKeySpec(passwordik.toCharArray(), salt, 65536, 128);
         SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
         byte[] hash = factory.generateSecret(spec).getEncoded();
@@ -40,9 +43,9 @@ public class User {
     public User(EditText email, EditText password) throws NoSuchAlgorithmException, InvalidKeySpecException {
         this.email = String.valueOf(email.getText());
         String passwordik = String.valueOf(password.getText());
-        SecureRandom random = new SecureRandom();
+        //SecureRandom random = new SecureRandom();
         byte[] salt = new byte[16];
-        random.nextBytes(salt);
+        //random.nextBytes(salt);
         KeySpec spec = new PBEKeySpec(passwordik.toCharArray(), salt, 65536, 128);
         SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
         byte[] hash = factory.generateSecret(spec).getEncoded();
