@@ -191,27 +191,26 @@
 
     </TextView>
 
-    <LinearLayout
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:text="Чтобы создать заказ нажмите"
+        android:textColor="@color/black"
+        android:fontFamily="@font/resistmediun"
+        android:textSize="12sp">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/gren"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/green_restangel"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="4dp">
+        android:layout_marginStart="20dp">
 
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:fontFamily="@font/resistmediun"
-            android:textColor="@color/white"
-            android:text="+ Новый заказ"
-            android:layout_gravity="center"
-            android:layout_marginStart="22dp">
-
-        </TextView>
-
-    </LinearLayout>
+    </ImageButton>
 
     <LinearLayout
 

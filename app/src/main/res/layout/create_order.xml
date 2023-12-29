@@ -5,6 +5,9 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,7 +81,30 @@
         </TextView>
 
         <TextView
-            android:id="@+id/dollar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="0"
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="$: "
+            android:fontFamily="@font/resistmediun"
+            android:textColor="@color/white"
+            android:layout_marginStart="6dp"
+            >
+
+        </TextView>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -125,7 +151,29 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:fontFamily="@font/resistlight"
-            android:text="Финансы">
+            android:text="Заказы">
+
+        </TextView>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_palok"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/resistlight"
+            android:text="Новые">
 
         </TextView>
 
@@ -136,84 +184,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="19dp"
-        android:text="Пополнение счета"
         android:textColor="@color/black"
-        android:fontFamily="@font/resistmediun"
-        android:textSize="32sp">
-
-    </TextView>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="12dp"
-        >
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/red_button">
-
-            <TextView
-                android:id="@+id/coins_rubels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:fontFamily="@font/resistmediun"
-                android:textColor="@color/white"
-                android:text="В рублях"
-                android:layout_gravity="center"
-                android:layout_marginStart="43dp">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/red_button"
-            android:layout_marginStart="14dp"
-            >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:fontFamily="@font/resistmediun"
-                android:textColor="@color/white"
-                android:text="В юанях"
-                android:layout_gravity="center"
-                android:layout_marginStart="45dp">
-
-            </TextView>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Нажмите красную для пополнения"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:fontFamily="@font/resistlight"
-        android:textColor="#B8B8B8"
-        android:layout_gravity="center"
-
+        android:text="В первом ссылка, во втором денег"
         >
 
     </TextView>
 
-    <ImageButton
-        android:id="@+id/umany_button"
+    <EditText
+        android:id="@+id/ssilka"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="#EEEEEE"
+        android:textColor="#B8B8B8"
+        android:textSize="16sp"
+        android:fontFamily="@font/resistthin"
+        android:layout_marginStart="19dp"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/deneg"
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="#EEEEEE"
+        android:textColor="#B8B8B8"
+        android:textSize="16sp"
+        android:fontFamily="@font/resistthin"
+        android:layout_marginStart="19dp"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="140dp"
+        android:layout_height="86dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/red_button">
-    </ImageButton>
+        android:backgroundTint="#E73F46"
+        android:fontFamily="@font/resistthin"
+        android:text="Создать заказ"
+        android:textSize="20sp" />
 
 </LinearLayout>

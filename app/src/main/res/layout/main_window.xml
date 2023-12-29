@@ -81,30 +81,7 @@
         </TextView>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="0"
-            android:fontFamily="@font/resistmediun"
-            android:textColor="@color/black"
-            android:layout_marginStart="6dp"
-            >
-
-        </TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="$: "
-            android:fontFamily="@font/resistmediun"
-            android:textColor="@color/white"
-            android:layout_marginStart="6dp"
-            >
-
-        </TextView>
-
-        <TextView
+            android:id="@+id/dollar_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -122,27 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginStart="16dp">
-
-        <ImageButton
-
-            android:layout_width="144dp"
-            android:layout_height="144dp"
-            android:background="@drawable/button_first">
-
-        </ImageButton>
-
-        <ImageButton
-
-            android:layout_width="144dp"
-            android:layout_height="144dp"
-            android:background="@drawable/button_second"
-            android:layout_marginStart="40dp">
-
-        </ImageButton>
-
-
-    </LinearLayout>
+        android:layout_marginStart="16dp"/>
 
 
 
@@ -153,7 +110,7 @@
         android:layout_marginStart="16dp">
 
         <ImageButton
-
+            android:id="@+id/buy"
             android:layout_width="144dp"
             android:layout_height="144dp"
             android:background="@drawable/button_third">

@@ -29,6 +29,15 @@ public class client {
         out.flush();
     }
 
+    public static void createOrder(Order order) throws IOException, JSONException {
+        out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+        JSONObject mamavano = new JSONObject();
+        mamavano.put("link", order.getLink());
+        mamavano.put("price", order.getPrice());
+        out.write("order " + mamavano + "\n");
+        out.flush();
+    }
+
     public static boolean SignUser(User user) throws IOException, JSONException {
         out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
@@ -44,17 +53,31 @@ public class client {
         return root.getBoolean("bool");
     }
 
-    public static String PayMenent(String coins) throws IOException, JSONException {
+    public static double money(String email) throws IOException, JSONException {
         out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+        in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         JSONObject mamavano = new JSONObject();
-        mamavano.put("coins", coins);
-        out.write("coins " + mamavano + "\n");
+        mamavano.put("email", email);
+        out.write("money " + mamavano + "\n");
         out.flush();
-        String urlToClint = in.readLine();
-        JSONTokener js = new JSONTokener(urlToClint);
+        String backresult = in.readLine();
+        JSONTokener js = new JSONTokener(backresult);
         JSONObject root = new JSONObject(js);
-        return root.getString("url");
+        System.out.println(backresult);
+        return root.getDouble("money");
     }
+
+    //public static String PayMenent(String coins) throws IOException, JSONException {
+    //    out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
+    //    JSONObject mamavano = new JSONObject();
+    //    mamavano.put("coins", coins);
+    //    out.write("coins " + mamavano + "\n");
+    //    out.flush();
+    //    String urlToClint = in.readLine();
+    //    JSONTokener js = new JSONTokener(urlToClint);
+    //    JSONObject root = new JSONObject(js);
+    //    return root.getString("url");
+    //}
 
 
 }

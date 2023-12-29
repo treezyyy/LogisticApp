@@ -54,6 +54,7 @@ public class SignWindow extends AppCompatActivity {
                 System.out.println(register);
                 if (register){
                     Intent intent = new Intent(view.getContext(), MainWindow.class);
+                    intent.putExtra("email", user.getEmail());
                     view.getContext().startActivity(intent);
                 }
             } catch (Exception ex) {
