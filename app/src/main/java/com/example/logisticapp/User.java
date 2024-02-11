@@ -53,6 +53,7 @@ public class User {
         for (int i = 0; i < hash.length; i++) {
             sb.append(hash[i]);
         }
+
         String result = sb.toString();
         this.password = result;
     }

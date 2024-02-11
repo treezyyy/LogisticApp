@@ -27,6 +27,7 @@ public class FinansWindow extends AppCompatActivity {
                 Intent telegram = new Intent(Intent.ACTION_VIEW , Uri.parse("https://t.me/LogistAppBot"));
                 startActivity(telegram);
                 }
+
         });
 
 
